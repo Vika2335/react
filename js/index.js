@@ -8,17 +8,30 @@
 const inputClick = () => console.log("Clicked")
 const mouseOver = () => console.log("Mouse Over")
 
+const helpText = "Help text!"
+
 //function inputClick(){
 //
 //}
 
-const elements = < input placeholder = "Help text"
-onClick = { inputClick }
-onMouseEnter = { mouseOver }
-/>
-const app = document.getElementById("app")
+//const elements = < input placeholder = { helpText }
+//onClick = { inputClick }
+//onMouseEnter = { mouseOver }
+///>
+//const app = document.getElementById("app")
 
-ReactDOM.render(elements, app)
+const elements = ( < div className = "name" >
+        <
+        h1 > { helpText } < /h1>  <
+        input placeholder = { helpText }
+        onClick = { inputClick }
+        onMouseEnter = { mouseOver }
+        />  <
+        p > { helpText == "Help text!" ? "Yes" : "NO" } < /p>  <
+        /div>)
+
+        const app = document.getElementById("app")
+        ReactDOM.render(elements, app)
 
 
-//ReactDOM.render(<input placeholder="Help text"/>, document.getElementById("app"))
+        //ReactDOM.render(<input placeholder="Help text"/>, document.getElementById("app"))
