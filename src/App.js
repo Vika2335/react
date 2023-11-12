@@ -2,6 +2,7 @@ import React from "react"
 import Header from "./components/Header"
 import Image from "./components/Image"
 import logo from "./img/react-logo.png"
+import Button from "./components/Button"
 
 class App extends React.Component {
   constructor(props){
@@ -12,6 +13,11 @@ class App extends React.Component {
     }
 
     this.inputClick = this.inputClick.bind(this)
+  }
+
+  componentDidUpdate(prevProp){
+    if(this.state.helpText !== "Помоги выучить React!")
+      console.log("Some")
   }
 
   render(){
