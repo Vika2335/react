@@ -13,7 +13,7 @@ class Users extends React.Component {
             return(<div className="user">
                 <h3>Пользователей нет</h3>
             </div>)
-  }
+    }
 }
 
 export default Users
