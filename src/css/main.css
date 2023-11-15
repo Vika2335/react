@@ -32,8 +32,9 @@ aside {
     float: left;
 }
 
-main .user {
+.user {
     margin-bottom: 50px;
     background-color: #00D8FF;
     padding: 20px;
 }
+
